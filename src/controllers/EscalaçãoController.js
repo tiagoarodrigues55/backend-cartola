@@ -52,11 +52,10 @@ module.exports = {
         return res.json(escalação)
     },
     async delete(req, res){
-        const {user_id, rodada} = req.params
+        const {id} = req.params
         Escalação.destroy({
             where: {
-                user_id,
-                rodada
+                id
               }
         })
     }
