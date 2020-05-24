@@ -19,18 +19,6 @@ module.exports = {
         foto2: {
           type: Sequelize.STRING
         },
-        width1: {
-          type: Sequelize.INTEGER
-        },
-        height1: {
-          type: Sequelize.INTEGER
-        }, 
-        width2: {
-          type: Sequelize.INTEGER
-        }, 
-        height2: {
-          type: Sequelize.INTEGER
-        }, 
         txt1: {
           type: Sequelize.STRING
         }, 

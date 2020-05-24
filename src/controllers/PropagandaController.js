@@ -8,9 +8,9 @@ module.exports = {
     },
 
     async store(req, res) {
-        const { fotoempresa, nome, foto1, foto2, width1, height1, width2, height2, txt1, txt2, porcentagem } = req.body
+        const { fotoempresa, nome, foto1, foto2, txt1, txt2, porcentagem } = req.body
 
-        const propaganda = await Propaganda.create({fotoempresa, nome, foto1, foto2, width1, height1, width2, height2, txt1, txt2, porcentagem})
+        const propaganda = await Propaganda.create({fotoempresa, nome, foto1, foto2, txt1, txt2, porcentagem})
 
         return res.json(propaganda)
     },
