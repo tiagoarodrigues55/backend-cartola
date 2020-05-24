@@ -29,6 +29,7 @@ routes.post('/jogadores', JogadoresController.store)
 routes.put('/jogadores/:id', JogadoresController.update)
 
 routes.post('/users/:user_id/escalacao', EscalaçãoController.store)
+routes.put('/users/:user_id/:rodada/escalacao', EscalaçãoController.update)
 routes.get('/users/:user_id/escalacao', EscalaçãoController.index)
 routes.get('/users/:rodada/escalacaoR', EscalaçãoController.indexrodada)
 

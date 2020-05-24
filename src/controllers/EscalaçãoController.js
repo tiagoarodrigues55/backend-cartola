@@ -23,8 +23,12 @@ module.exports = {
         }
         return res.json(escalaçoes)
     },
-
-    
+    async update(req, res){
+        const { id, rodada } = req.params
+        const {jogador1_id, jogador2_id, jogador3_id, jogador4_id, jogador5_id} = req.body
+        const user = User.update({jogador1_id, jogador2_id, jogador3_id, jogador4_id, jogador5_id }, {where: { id: id, rodada: rodada}})
+        return res.json(user)
+    },
 
     async store(req, res){
         const { user_id } = req.params

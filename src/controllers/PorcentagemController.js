@@ -28,7 +28,6 @@ module.exports = {
         }
         const porcentagem = await Porcentagem.create({
             dados,
-           
             propaganda_id
         })
         return res.json(porcentagem)
