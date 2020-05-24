@@ -50,5 +50,15 @@ module.exports = {
         })
         console.log(escalação)
         return res.json(escalação)
+    },
+    async delete(req, res){
+        const {user_id, rodada} = req.params
+        Escalação.destroy({
+            where: {
+                user_id,
+                rodada
+              }
+        })
     }
+
 }
