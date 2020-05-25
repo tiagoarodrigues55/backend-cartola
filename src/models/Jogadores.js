@@ -10,7 +10,8 @@ class Jogadores extends Model {
             ultimapontuação : DataTypes.FLOAT,
             valorização : DataTypes.FLOAT,
             jogos: DataTypes.INTEGER,
-            time: DataTypes.STRING
+            time: DataTypes.STRING,
+            pontos: DataTypes.FLOAT
         }, {
             sequelize
         })
